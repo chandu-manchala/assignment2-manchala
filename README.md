@@ -30,3 +30,14 @@
 ---------------------------------------------------------------------
 
 [link to my "about.md " file](https://github.com/chandu-manchala/assignment2-manchala/blob/main/AboutMe.md)
+
+
+--------------------------------------------------------------------
+
+# Sports
+
+| Name   | Location   | Amount   |
+|--------|------------|----------|
+| Volley Ball   |Guntur   | $40   |
+| Basket Ball   | Vijayawada   | $20   |
+| Throw Ball   | Hyderabad   |$15   |
