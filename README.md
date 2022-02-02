@@ -49,3 +49,46 @@
 >The way to get started is to quit talking and begin doing-*Walt Disney*
 >
 >Life is what happens when you're busy making other plans-*John Lennon*
+
+---------------------------------------------------------------------
+# code fencing
+
+>The algorithm exists in many variants. Dijkstra's original algorithm found the shortest path between two given nodes,[6] but a more common variant fixes a single node as the "source" node and finds shortest paths from the source to all other nodes in the graph, producing a shortest-path tree.
+
+<https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm>
+
+```
+const int INF = 1000000000;
+vector<vector<pair<int, int>>> adj;
+
+void dijkstra(int s, vector<int> & d, vector<int> & p) {
+    int n = adj.size();
+    d.assign(n, INF);
+    p.assign(n, -1);
+    vector<bool> u(n, false);
+
+    d[s] = 0;
+    for (int i = 0; i < n; i++) {
+        int v = -1;
+        for (int j = 0; j < n; j++) {
+            if (!u[j] && (v == -1 || d[j] < d[v]))
+                v = j;
+        }
+
+        if (d[v] == INF)
+            break;
+
+        u[v] = true;
+        for (auto edge : adj[v]) {
+            int to = edge.first;
+            int len = edge.second;
+
+            if (d[v] + len < d[to]) {
+                d[to] = d[v] + len;
+                p[to] = v;
+            }
+        }
+    }
+}
+```
+<https://cp-algorithms.com/graph/dijkstra.html>
