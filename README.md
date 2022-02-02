@@ -41,3 +41,9 @@
 | Volley Ball   |Guntur   | $40   |
 | Basket Ball   | Vijayawada   | $20   |
 | Throw Ball   | Hyderabad   |$15   |
+
+-------------------------------------------------------------------
+
+>The way to get started is to quit talking and begin doing-*Walt Disney*
+>
+>Life is what happens when you're busy making other plans-*John Lennon*
