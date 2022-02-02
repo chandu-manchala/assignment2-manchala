@@ -26,3 +26,7 @@
 1. Chicken Mandi
 2. Mutton Mandi
 3. Prawns Mandi
+
+---------------------------------------------------------------------
+
+[link to my "about.md " file](https://github.com/chandu-manchala/assignment2-manchala/blob/main/AboutMe.md)
